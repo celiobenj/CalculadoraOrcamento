@@ -34,26 +34,24 @@ CalculadoraOrcamento/
 |
 |-- src/
 |   |
-|   `-- com/
-|       `-- seuprojeto/
-|           `-- orcamento/
-|               |
-|               |-- model/
-|               |   |-- Categoria.java
-|               |   |-- Item.java
-|               |   |-- Orcamento.java
-|               |   `-- ItemOrcamentado.java
-|               |
-|               |-- view/
-|               |   `-- (Classes da interface gráfica, ex: TelaPrincipal.java)
-|               |
-|               |-- controller/
-|               |   `-- (Classes de controle, ex: OrcamentoController.java)
-|               |
-|               `-- Main.java
+|   |-- model/
+|   |   |-- Categoria.java
+|   |   |-- Item.java
+|   |   |-- Orcamento.java
+|   |   |-- ItemOrcamentado.java
+|   |   `-- README.md
+|   |
+|   |-- view/
+|   |   |-- CadastroItensPanel.java
+|   |   `-- OrcamentoPanel.java
+|   |
+|   |-- controller/
+|   |   `-- OrcamentoController.java
+|   |
+|   `-- Main.java
 |
 `-- data/
-    `-- (Arquivos gerados, ex: orcamento.txt)
+    `-- (Arquivos gerados, ex: Orcamento_1.txt)
 ```
 
 ### Descrição dos Pacotes
