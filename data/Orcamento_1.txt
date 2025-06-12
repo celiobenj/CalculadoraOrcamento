@@ -1,8 +1,8 @@
 Extrato do Orçamento - Código: 1
-Data: 11/06/2025 23:33:45
+Data: 12/06/2025 09:14:09
 --------------------------------------------------
 Itens Orçados:
-  - Cimento MIZU (Quant: 1) * 52,00(und) = 52,00
+  - Cimento Cauë (50kg) (Quant: 15) * R$30,00(und) = R$450,00
 --------------------------------------------------
-Valor Total (sem imposto): 52,00
-Valor Final com Imposto (6.5%): 55,38
+Valor Total (sem imposto): R$450,00
+Valor Final com Imposto (6.5%): R$479,25
