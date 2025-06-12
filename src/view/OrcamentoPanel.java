@@ -492,7 +492,10 @@ public class OrcamentoPanel extends JPanel {
             return;
         }
 
+
+        
         JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new java.io.File("./data"));
         fileChooser.setDialogTitle("Salvar Orçamento como TXT");
         fileChooser.setSelectedFile(new java.io.File("Orcamento_" + orcamentoAtual.getCodOrcamento() + ".txt"));
         int userSelection = fileChooser.showSaveDialog(this);

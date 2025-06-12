@@ -144,12 +144,12 @@ public class OrcamentoController {
         }
 
         // 1. Verifica duplicidade de codItemOrcamentado
-        boolean exists = this.itensOrcamentados.stream()
-                .anyMatch(io -> io.getCodItemOrcamentado() == itemOrcamentado.getCodItemOrcamentado());
-        if (exists) {
-            System.err.println("Erro: Item orçado com este código já existe.");
-            return false;
-        }
+        // boolean exists = this.itensOrcamentados.stream()
+        //         .anyMatch(io -> io.getCodItemOrcamentado() == itemOrcamentado.getCodItemOrcamentado());
+        // if (exists) {
+        //     System.err.println("Erro: Item orçado com este código já existe.");
+        //     return false;
+        // }
 
         // 2. Busca o item no estoque e verifica disponibilidade
         Optional<Item> itemNoEstoqueOpt = buscarItemPorCodigo(itemOrcamentado.getItem().getCodItem());
@@ -274,7 +274,7 @@ public class OrcamentoController {
                 String itemName = (itemOrcamentado.getItem() != null) ? itemOrcamentado.getItem().getDescricao() : "N/A";
                 double itemValue = (itemOrcamentado.getItem() != null) ? itemOrcamentado.getItem().getValor() : 0.0;
 
-                bw.write(String.format("  - %s (Quant: %d) * %.2f(und) = %.2f",
+                bw.write(String.format("  - %s (Quant: %d) * R$%.2f(und) = R$%.2f",
                         itemName,
                         itemOrcamentado.getQuantidadeUtilizada(),
                         itemValue,
@@ -283,9 +283,9 @@ public class OrcamentoController {
             }
             bw.write("--------------------------------------------------");
             bw.newLine();
-            bw.write(String.format("Valor Total (sem imposto): %.2f", orcamento.getValorTotal()));
+            bw.write(String.format("Valor Total (sem imposto): R$%.2f", orcamento.getValorTotal()));
             bw.newLine();
-            bw.write(String.format("Valor Final com Imposto (6.5%%): %.2f", orcamento.getValorFinalComImposto()));
+            bw.write(String.format("Valor Final com Imposto (6.5%%): R$%.2f", orcamento.getValorFinalComImposto()));
             bw.newLine();
             System.out.println("Orçamento exportado com sucesso para: " + filePath);
         } catch (IOException e) {
