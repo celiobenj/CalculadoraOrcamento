@@ -16,7 +16,7 @@ public class TelaPrincipal extends JFrame {
         this.controller = controller;
 
         JTabbedPane tabs = new JTabbedPane();
-        tabs.addTab("Cadastro de Itens", new CadastroItensPanel(this.controller));
+        tabs.addTab("Gerenciamento de Itens", new CadastroItensPanel(this.controller));
         tabs.addTab("Orçamento", new OrcamentoPanel(this.controller));
 
         add(tabs);

@@ -1,8 +1,9 @@
 Extrato do Orçamento - Código: 1
-Data: 12/06/2025 09:14:09
+Data: 12/06/2025 09:41:08
 --------------------------------------------------
 Itens Orçados:
-  - Cimento Cauë (50kg) (Quant: 15) * R$30,00(und) = R$450,00
+  - Cimento Mizu (Quant: 10) * R$30,00(und) = R$300,00
+  - Colher de pedreiro (Quant: 10) * R$15,00(und) = R$150,00
 --------------------------------------------------
 Valor Total (sem imposto): R$450,00
 Valor Final com Imposto (6.5%): R$479,25
