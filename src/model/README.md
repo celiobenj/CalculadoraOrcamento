@@ -4,7 +4,7 @@
 
 Este pacote contém todas as classes que representam a estrutura de dados e a lógica de negócio da aplicação **Calculadora de Orçamento de Obras**. Ele é o coração do sistema, responsável por modelar as entidades do mundo real (como itens e categorias) e suas interações, sem qualquer dependência da interface gráfica (View) ou da lógica de controle (Controller).
 
-As classes aqui presentes são projetadas para serem "POJOs" (Plain Old Java Objects), focando em atributos, construtores e métodos de acesso (`getters`/`setters`). Adicionalmente, cada classe inclui um método `toCSV()` para facilitar a exportação de dados, conforme os requisitos do projeto.
+As classes aqui presentes são projetadas para serem "POJOs" (Plain Old Java Objects), focando em atributos, construtores e métodos de acesso (`getters`/`setters`). Adicionalmente, cada classe inclui um método `toString()` para facilitar a exportação de dados, conforme os requisitos do projeto.
 
 ---
 
