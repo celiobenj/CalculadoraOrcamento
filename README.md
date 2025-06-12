@@ -56,26 +56,26 @@ CalculadoraOrcamento/
 
 ### Descrição dos Pacotes
 
-* **`src`**: Contém todo o código-fonte da aplicação.
-* **`com.seuprojeto.orcamento.model`**:
+* [**`/src`**](src): Contém todo o código-fonte da aplicação.
+* [**`model`**](src\model):
     * **Responsabilidade**: Representa os dados e a lógica de negócio do sistema.
     * **Conteúdo**: Classes que modelam as entidades do projeto, como `Categoria`, `Item`, `Orcamento` e `ItemOrcamentado`. Elas não têm conhecimento sobre a interface gráfica.
-* **`com.seuprojeto.orcamento.view`**:
+* [**`view`**](src\view):
     * **Responsabilidade**: Camada de apresentação, ou seja, tudo o que o usuário vê.
     * **Conteúdo**: Classes do Java Swing (`JFrame`, `JPanel`, `JButton`, etc.) que constroem as telas do sistema, como o menu inicial e as telas de cadastro.
-* **`com.seuprojeto.orcamento.controller`**:
+* [**`controller`**](src\controller):
     * **Responsabilidade**: Atua como intermediário entre o `Model` e a `View`.
     * **Conteúdo**: Classes que recebem as ações do usuário (ex: um clique de botão na `View`), processam esses eventos e acionam as devidas atualizações no `Model`. Em seguida, notificam a `View` para que ela se atualize e mostre os novos dados.
-* **`Main.java`**:
+* [**`Main.java`**](src\Main.java):
     * **Responsabilidade**: Ponto de entrada da aplicação. É responsável por iniciar o sistema, criando as instâncias iniciais da View e do Controller.
-* **`/data`**:
+* [**`/data`**](data):
     * **Responsabilidade**: Diretório para armazenar dados persistentes, como os arquivos de extrato (`.txt` ou `.csv`) gerados pelo sistema.
 
 ## Como Executar
 
 1.  Clone o repositório para sua máquina local.
 2.  Abra o projeto em sua IDE Java preferida (Eclipse, IntelliJ, NetBeans).
-3.  Localize o arquivo `src/com/seuprojeto/orcamento/Main.java`.
+3.  Localize o arquivo `src/Main.java`.
 4.  Execute o método `main` para iniciar a aplicação.
 
 ## Autores
